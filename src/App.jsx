@@ -15,7 +15,7 @@ const App = () => {
       <div className='grid grid-cols-12 mt-8 mb-52'>
         {/* left side */}
         <div className='col-span-9'>
-          <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
+          <Suspense fallback={<span className="loading loading-spinner loading-xl text-center"></span>}>
             <DisplayData fetchData={fetchData}></DisplayData>
           </Suspense>
         </div>
