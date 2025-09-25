@@ -1,12 +1,33 @@
-# Project Name: 
+# Project Name: Knowledge Cafe
 
 ## Project Description:  
+This is my very first React.js project. After learning the core concepts like props, hooks, conditional rendering, rendering lists, fetching data etc, I built this project. In this project, I fetch locally created JSON data using useEffect and store data using useEffect, then display the data using map. After that, I added bookmark and mark as read functionality.
+
+Honestly, I really love React.js! It makes everything so much easier because of its component-based architecture and JSX.
+
+If I had built this project with raw JavaScript, I would’ve had to manage a lot of unnecessary complexity. For example, manually selecting elements and updating them one by one. But in React, the whole process is simplified:
+
+- I can use useState to store and update values.
+- I can use useEffect to handle side effects.
+- I can use JSX to write HTML directly inside JavaScript.
+
+
+## features
+This is a simple React Single Page Application (SPA) where I can:
+
+- Add a blog to the reading list along with its reading time by clicking bookmarked icon.
+- Remove a blog from the list by clicking Mark as Read button
+
+- On the left side, I can see:
+  - The total number of blogs I selected to read.
+  - The total time I spent reading those blogs.
+  - The headings of all selected blogs.
+
 
 ## Live Site Link:
 
 ## Project Video:
 
-## Features:
 
 ## What I Learned New while Building This Project:
 
