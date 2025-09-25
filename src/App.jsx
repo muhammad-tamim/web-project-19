@@ -30,6 +30,11 @@ const App = () => {
     toast.success('Your Bookmarked is added!')
   }
 
+  const handleMarkAsRead = (id) => {
+    const remainingData = singleData.filter((data) => data.id !== id)
+    setSingleData(remainingData)
+    toast.success('Congratulation, you successfully Read a blog!')
+  }
 
   return (
     <>
@@ -44,7 +49,7 @@ const App = () => {
               <span className="loading size-16 loading-spinner"></span>
             </div>}
             {error && <p className='text-center text-3xl text-red-500'>{error.message}</p>}
-            <DisplayData data={data} handleBookmarked={handleBookmarked}></DisplayData>
+            <DisplayData data={data} handleBookmarked={handleBookmarked} handleMarkAsRead={handleMarkAsRead}></DisplayData>
           </div>
 
           {/* right side */}

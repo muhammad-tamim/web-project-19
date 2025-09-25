@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { CiBookmark } from 'react-icons/ci';
 
-const Card = ({ singleData, handleBookmarked }) => {
+const Card = ({ singleData, handleBookmarked, handleMarkAsRead }) => {
 
     const { cover, title, author_img, author, posted_date, reading_time, hashtags } = singleData;
 
@@ -36,7 +36,7 @@ const Card = ({ singleData, handleBookmarked }) => {
                 {hashtags.map((tags, index) => <p key={index} className=''>{tags}</p>)}
             </div>
             <div>
-                <p className='text-[#6047EC] text-xl font-semibold underline cursor-pointer'>Mark As Read</p>
+                <p className='text-[#6047EC] text-xl font-semibold underline cursor-pointer' onClick={() => handleMarkAsRead(singleData.id)}>Mark As Read</p>
             </div>
             <div>
                 <hr className='text-[#11111115]' />
