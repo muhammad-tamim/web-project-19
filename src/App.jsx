@@ -42,9 +42,9 @@ const App = () => {
       <div className='max-w-7xl mx-auto'>
         <Navbar></Navbar>
 
-        <div className='grid grid-cols-12 mt-8 mb-52'>
+        <div className='px-4 xl:px-0 flex flex-col-reverse md:flex-none md:grid md:grid-cols-12 mt-8 mb-52'>
           {/* left side */}
-          <div className='col-span-8'>
+          <div className='md:col-span-8'>
             {loading && <div className='text-center '>
               <span className="loading size-16 loading-spinner"></span>
             </div>}
@@ -53,16 +53,16 @@ const App = () => {
           </div>
 
           {/* right side */}
-          <div className='col-span-4'>
-            <p className='text-[#6047EC] mb-6 font-bold text-2xl border border-[#6047EC] bg-[#6047EC10] rounded-lg py-5 px-12'>
+          <div className='mb-10 md:mb-0 md:col-span-4'>
+            <p className='text-[#6047EC] mb-6 font-bold text-sm lg:text-2xl border border-[#6047EC] bg-[#6047EC10] rounded-lg py-5 px-5 lg:px-12 text-center'>
               Spent time on read : {singleDataTime} min
             </p>
 
             <div className='rounded-lg bg-[#11111105] p-7 '>
-              <h3 className='text-2xl font-bold mb-6'>Bookmarked Blogs : {singleData.length}</h3>
+              <h3 className='lg:text-2xl font-bold mb-6 text-center'>Bookmarked Blogs : {singleData.length}</h3>
 
               {
-                singleData.map((data) => <p key={data.id} className='text-lg font-semibold p-5 mb-6 rounded-lg bg-white'>{data.title}</p>)
+                singleData.map((data) => <p key={data.id} className='text-sm lg:text-lg font-semibold p-5 mb-6 rounded-lg bg-white'>{data.title}</p>)
               }
 
             </div>
