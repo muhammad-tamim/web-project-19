@@ -10,6 +10,41 @@
 
 ## What I Learned New while Building This Project:
 
+1. How to add google fonts on react project:
+
+```html
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="knowledge.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knowledge Cafe</title>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    .exo-2 {
+      font-family: "Exo 2", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body class="exo-2">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
+```
+
 ## Challenges I faced while Building This Project:
 1. I mistakenly add a comma on the very last object in my json data, so its give me error and it's take couple of minute to find: 
 
