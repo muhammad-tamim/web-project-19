@@ -143,6 +143,16 @@ const App = () => {
 
 export default App;
 ```
+3. How to deploy react project on netlify: 
+
+Basically, there are two ways to deploy a React project on Netlify:
+- Way 1: Using `npm run build` + Drag & Drop: 
+  - Run npm run build → this creates a dist folder (which contains all your optimized production code).
+  - Go to Netlify drag and drop your dist folder there.
+- Way 2: Deploy directly using GitHub → Netlify
+  - With this method, you don’t need to manually build dist folder using `npm run build` using vs code because Netlify do it for you.
+
+![iamges](./src/assets/images/readme-images/netlify-deploy-process.png) 
 
 ## Challenges I faced while Building This Project:
 1. I mistakenly add a comma on the very last object in my json data, so its give me error and it's take couple of minute to find: 
