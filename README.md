@@ -1,7 +1,7 @@
 # Project Name: Knowledge Cafe
 
 ## Project Description:  
-This is my very first React.js project. After learning the core concepts like props, hooks, conditional rendering, rendering lists, fetching data etc, I built this project. In this project, I fetch locally created JSON data using useEffect and store data using useEffect, then display the data using map. After that, I added bookmark and mark as read functionality.
+This is my very first React.js project. After learning the core concepts like props, hooks, conditional rendering, rendering lists, fetching data etc, I built this project. In this project, I fetch locally created JSON data using useEffect and store data using useState, then display the data using map. After that, I added bookmark and mark as read functionality.
 
 Honestly, I really love React.js! It makes everything so much easier because of its component-based architecture and JSX.
 
@@ -25,6 +25,8 @@ This is a simple React Single Page Application (SPA) where I can:
 
 
 ## Live Site Link:
+
+https://web-project-19.netlify.app/
 
 ## Project Video:
 
