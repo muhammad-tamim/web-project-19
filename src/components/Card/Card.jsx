@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CiBookmark } from 'react-icons/ci';
 
-const Card = ({ singleData }) => {
+const Card = ({ singleData, handleBookmarked }) => {
 
     const { cover, title, author_img, author, posted_date, reading_time, hashtags } = singleData;
+
+    const [clicked, setClicked] = useState(false)
 
     return (
         <div className="pr-6 space-y-8 mb-10">
@@ -20,8 +22,11 @@ const Card = ({ singleData }) => {
                         <p className='text-[#11111160] font-semibold'>{posted_date}</p>
                     </div>
                 </div>
-                <div className='flex items-center text-xl font-medium text-[#11111160]'>
-                    {reading_time} min read <CiBookmark className='text-2xl cursor-pointer' />
+                <div className={`flex items-center text-xl font-medium text-[#11111160]`}>
+                    {reading_time} min read <CiBookmark onClick={() => {
+                        handleBookmarked(singleData)
+                        setClicked(true)
+                    }} className={`text-2xl cursor-pointer ${clicked && 'text-primary font-black'}`} />
                 </div>
             </div>
             <div>
