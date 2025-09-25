@@ -12,6 +12,14 @@ If I had built this project with raw JavaScript, I would’ve had to manage a lo
 - I can use JSX to write HTML directly inside JavaScript.
 
 
+## Live Site Link:
+
+https://web-project-19.netlify.app/
+
+## Project Video:
+
+https://github.com/user-attachments/assets/d99ac365-90bb-4d89-93c4-2ca95b088819
+
 ## features
 This is a simple React Single Page Application (SPA) where I can:
 
@@ -22,15 +30,6 @@ This is a simple React Single Page Application (SPA) where I can:
   - The total number of blogs I selected to read.
   - The total time I spent reading those blogs.
   - The headings of all selected blogs.
-
-
-## Live Site Link:
-
-https://web-project-19.netlify.app/
-
-## Project Video:
-
-https://github.com/user-attachments/assets/d99ac365-90bb-4d89-93c4-2ca95b088819
 
 
 ## What I Learned New while Building This Project:
