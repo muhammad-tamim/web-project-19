@@ -19,10 +19,10 @@ const Card = ({ singleData, handleBookmarked, handleMarkAsRead }) => {
                     </div>
                     <div>
                         <h3 className='lg:text-xl font-bold'>{author}</h3>
-                        <p className='text-[#11111160] textarea-xs lg:text-base font-semibold'>{posted_date}</p>
+                        <p className='text-[#11111160] dark:text-white textarea-xs lg:text-base font-semibold'>{posted_date}</p>
                     </div>
                 </div>
-                <div className={`flex items-center text-xs lg:text-xl font-medium text-[#11111160]`}>
+                <div className={`flex items-center text-xs lg:text-xl font-medium dark:text-white text-[#11111160]`}>
                     {reading_time} min read <CiBookmark onClick={() => {
                         handleBookmarked(singleData)
                         setClicked(true)
@@ -32,14 +32,14 @@ const Card = ({ singleData, handleBookmarked, handleMarkAsRead }) => {
             <div>
                 <h1 className='text-lg lg:text-[40px] font-bold max-w-[737px]'>{title}</h1>
             </div>
-            <div className='flex lg:text-xl font-medium text-[#11111160] gap-4'>
+            <div className='flex lg:text-xl font-medium dark:text-white text-[#11111160] gap-4'>
                 {hashtags.map((tags, index) => <p key={index} className=''>{tags}</p>)}
             </div>
             <div>
                 <p className='text-[#6047EC] text-xl font-semibold underline cursor-pointer' onClick={() => handleMarkAsRead(singleData.id)}>Mark As Read</p>
             </div>
             <div>
-                <hr className='text-[#11111115]' />
+                <hr className='dark:text-white text-[#11111115]' />
             </div>
         </div>
     );

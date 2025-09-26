@@ -58,11 +58,11 @@ const App = () => {
               Spent time on read : {singleDataTime} min
             </p>
 
-            <div className='rounded-lg bg-[#11111105] p-7 '>
-              <h3 className='lg:text-2xl font-bold mb-6 text-center'>Bookmarked Blogs : {singleData.length}</h3>
+            <div className='rounded-lg bg-[#11111105] dark:bg-white p-7 '>
+              <h3 className='lg:text-2xl font-bold mb-6 dark:text-black text-center'>Bookmarked Blogs : {singleData.length}</h3>
 
               {
-                singleData.map((data) => <p key={data.id} className='text-sm lg:text-lg font-semibold p-5 mb-6 rounded-lg bg-white'>{data.title}</p>)
+                singleData.map((data) => <p key={data.id} className='text-sm lg:text-lg font-semibold p-5 mb-6 rounded-lg bg-white dark:bg-black'>{data.title}</p>)
               }
 
             </div>
